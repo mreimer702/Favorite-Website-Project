@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"/>
+        <title>USS Enterprise CV-6 - About</title>
+    </head>
+
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg fixed-top" style = "background-color: #1F51FF">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="../index.html" style = "color: #FFFF00">USS Enterprise CV-6 Website</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ms-auto">
+                      <a class="nav-link" href="../index.html" style = "color:#FFFF00">Home</a>
+                      <a class="nav-link active" aria-current="page" href="about.html" style = "color:#FFFF00">About</a>
+                      <a class="nav-link" href="contact.html" style = "color:#FFFF00">Sign Up</a>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+        </header>
+        <main style ="background-color: #000080">
+            <h1 class="text-center pt-5 mt-3" style="color: #00FFFF">About the USS Enterprise</h1>
+            <div id="carousel" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="../images/carousel1.jpg" class="d-block w-75 mx-auto" style = "height: 850px" alt="Enterprise in May 1942">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../images/carousel2.jpg" class="d-block w-75 mx-auto" style = "height: 850px" alt="Planes ready to take off Enterprise at Midway">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../images/carousel3.jpg" class="d-block w-75 mx-auto" style = "height: 850px" alt="Bomb hits deck of Enterprise during Eastern Solomon">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../images/carousel4.jpg" class="d-block w-75 mx-auto" style = "height: 850px" alt="Clearing Enterprise deck November 1943">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../images/carousel5.jpg" class="d-block w-75 mx-auto" style = "height: 850px" alt="Enterprise at the end of World War II">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+              <p class="container-fluid w-50 text-center pt-3" style="color: #00FFFF">
+                The USS Enterprise was commissioned in 1937. 
+                She was the first aircraft carrier on the scene after the Attack on Pearl Harbor. 
+                She then went on to serve in nearly every major battle in the Pacific during World War II, earning the most decorations out of any ship in that conflict. 
+                She helped change the course of the war in the Pacific. She was decommissioned in 1947 and then scrapped eleven years later after efforts to preserve her were unsuccessful. 
+                She now only lives on in artifacts and memories. </p>
+                <section id="important-dates">
+                    <h2 class="container-fluid w-50 text-center" style="color: #00ffff">Click the button below to see some important dates in the Enterprise's history</h2>
+                    <h3 class="container-fluid w-50 text-center" id = "important-dates-results" style="color: #00ffff"></h3>
+                    <button type="button" id="important-dates-button" class="btn btn-info container-fluid d-block mx-auto w-25 m-4">Click to see important dates</button>
+                </section>
+                <section id="battle-checker">
+                    <h2 class="container-fluid w-50 text-center" style="color: #00ffff">Write a name of a battle to see if the Enterprise fought at that battle</h2>
+                    <div class="input-group container-fluid w-25 text-center">
+                        <textarea class="form-control text-center" id="battle-checker-input" aria-label="With textarea" placeholder="Write the name of the battle here"></textarea>
+                      </div>
+                    <h3 class="container-fluid w-50 text-center" id = "battle-checker-results" style="color: #00ffff"></h3>
+                    <button type="button" id="battle-checker-button" class="btn btn-info container-fluid d-block mx-auto w-25 m-4">Click to see if the Enterprise fought at that battle</button>
+                </section>
+                <section id="battle-star-guesser">
+                    <h2 class="container-fluid w-50 text-center" style="color: #00ffff">Guess how many battle stars the Enterprise earned during World War II</h2>
+                    <div class="input-group container-fluid w-25 text-center">
+                        <textarea class="form-control text-center" id="battle-star-guesser-input" aria-label="With textarea" placeholder="Write your guess here"></textarea>
+                      </div>
+                    <h3 class="container-fluid w-50 text-center" id = "battle-star-guesser-results" style="color: #00ffff"></h3>
+                    <button type="button" id="battle-star-guesser-button" class="btn btn-info container-fluid d-block mx-auto w-25 m-4">Click to see if your guess is correct</button>
+                </section>
+                <h2 class="container-fluid w-50 text-center" style="color: #00ffff">FAQs</h2>
+                <div class="accordion accordion-flush" id="accordion">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header mx-auto d-block">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                          What does CV-6 stand for?
+                        </button>
+                      </h2>
+                      <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">CV is the US Navy designation for an aircraft carrier. 6 means that the USS Enterprise was the sixth.</div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            Why was the USS Enterprise nicknamed “the Big E”?
+                        </button>
+                      </h2>
+                      <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Because before World War II, she was considered by the US Navy to be its most efficiently run ship.</div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                            How many aircraft could fit aboard the Enterprise?
+                        </button>
+                      </h2>
+                      <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">She could carry a maximum of 96 planes on board.</div>
+                      </div>
+                    </div>
+                  </div>
+        </main>
+        <footer>
+            <footer class="container-fluid" style="background-color: #1F51FF">
+                <section class="row">
+                    <p class="col" style="color: #FFFF00"> &copy; Martin Reimer 2025</p>
+                    <p class="col" style="color: #FFFF00">The images for this webpage can be found on Wikipedia</p>
+                    <p class="col" style="color: #FFFF00">The website that inspired this project can be found at this <a href="http://www.cv6.org/" style="color: #FFFF00">link</a></p>
+                </section>
+            </footer>
+        </footer>
+        <script
+        src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"
+    ></script>
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"
+    ></script>
+        <script src= "../js/script.js"></script>
+    </body>
+</html>
